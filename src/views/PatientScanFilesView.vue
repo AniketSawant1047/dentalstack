@@ -1,3 +1,3 @@
 <template>
-    <h1>Scan FIle</h1>
+    <h1>Patients Scan File</h1>
 </template>
