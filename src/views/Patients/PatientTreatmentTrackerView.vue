@@ -1,14 +1,10 @@
 <template>
     <div>
-        <ul class="nav nav-tabs">
+        <ul class="nav nav-tabs" id="nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" @click="createNewTreatment">New
-                    Treatment</a>
+                <a class="nav-link active" aria-current="page" @click="createNewTreatment">New Treatment</a>
             </li>
-            <li class="nav-item">
-
-
-            </li>
+            
         </ul>
     </div>
     <div class="newTreatment" id="newTreatment">
@@ -32,7 +28,7 @@
         </div>
         <div class="row">
             <div>
-                <table class="table">
+                <table class="table" id="treatmentTracker">
                     <thead>
                         <tr>
                             <th>Aligner</th>
@@ -74,6 +70,7 @@
 
                     </tbody>
                     <button class="btn btn-success pull-right" id="button" @click="upload()">Save</button>
+                    <button @click="function1()">ADD</button>
                 </table>
             </div>
         </div>
@@ -118,7 +115,7 @@ export default {
                 alignerType: type,
                 alignerDay: day
             }
-            for (let i = 1; i < aligner; i++) {                
+            for (let i = 1; i < aligner; i++) {
                 this.tracker[i] = {
                     startDate: new Date(start.setDate(start.getDate() + day + 1)),
                     endDate: new Date(end.setDate(end.getDate() + (day + 1))),
@@ -205,6 +202,14 @@ export default {
                 alert("sign_up succesfully");
                 localStorage.setItem("user_info", JSON.stringify(result.data));
             }
+        },
+        function1() {
+            var ul = document.getElementById("nav");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(this.trackerId+" Treatment "));
+            li.setAttribute("class", "nav-item"); // added line
+            ul.appendChild(li);
+
         }
     },
     mounted() {

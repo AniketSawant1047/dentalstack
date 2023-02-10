@@ -84,7 +84,7 @@
         </div><br>
         <div class="sub2">
             <div class="chart-wrapper">
-                <BarChart />
+                <AdminBarChart />
             </div>
             <div class="chart-wrapper">
                 <BarChart />
@@ -213,11 +213,11 @@
 </template>
 
 <script>
-import BarChart from './BarChart.vue'
+import AdminBarChart from './AdminBarChart.vue'
 
 import axios from 'axios';
 export default {
-   components: { BarChart },
+   components: { AdminBarChart }, 
    name: "AdminListView",
    data(){
        return{

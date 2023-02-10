@@ -5,7 +5,7 @@
                 <td colspan="2" class="headline"> <i class="fa-solid fa-pencil"></i> Doctor Form</td>
                 <td > </td>
             </tr>
-            <tr>
+            <tr id="name">
                 <td class="firsttd"> <lable class="lable" for="">First Name</lable></td>
                 <td> <input type="text" v-model="doctorName"  placeholder="Enter First Name" required></td>
             </tr>
@@ -80,12 +80,13 @@
             </tr>
     </table>
     <br>
-    
+    <button @click="doctoFields(1)"> Show</button>
 </body>
 </template>
 
 <script >
 import axios from 'axios'
+
 
 export default{
     name:'SignUp',
@@ -130,14 +131,23 @@ export default{
            if(result.status==201){
             alert("sign_up succesfully");
             localStorage.setItem("user_info",JSON.stringify(result.data));
-           }
-           
+           } 
     },
+    doctoFields(e){
+        if (e ==1) {
+            document.getElementById("name").style.display="block";
+        } else {
+            document.getElementById("name").style.display="none";
+        }
+    }
   }
 }
 </script>
 <style scoped>
-
+#name{
+    display: none;
+    width: 100%;
+}
 .register{
     width: 100%;
     background: transparent;

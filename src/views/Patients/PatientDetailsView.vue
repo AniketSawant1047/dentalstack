@@ -35,13 +35,13 @@
                 <tr>
                     <td>
                         <b>External Doctor : </b>
-                        {{ externalDoctor }}
+                        {{ list.externalDoctor }}
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <b>Affiliate Clinic : </b>
-                        {{ assignclinic }}
+                        {{list.assignclinic }}
                     </td>
                 </tr>
                 <tr>
@@ -53,7 +53,7 @@
                 <tr>
                     <td>
                         <b>Internal Doctor : </b>
-                        {{ internalDoctor}}
+                        {{ list.internalDoctor}}
                     </td>
                 </tr>
                 <tr>
