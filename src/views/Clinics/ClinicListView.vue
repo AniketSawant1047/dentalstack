@@ -37,28 +37,28 @@
      </body>
  </template>
  <script>
- import axios from 'axios';
- export default{
-     name: "ClinicListView",
-     data(){
-         return{
-             list:[]
-         }
-     },
-     async mounted(){
-         axios.get('http://192.168.1.35:8080/clinicList',{})
-         .then(response => {
-             this.list = response.data;
-             console.log(response.data);
-         })
-         .catch(error =>{
-             this.errors.push(error);
-             console.log(error);
-         })
-     },
+//  import axios from 'axios';
+//  export default{
+//      name: "ClinicListView",
+//      data(){
+//          return{
+//              list:[]
+//          }
+//      },
+//      async mounted(){
+//          axios.get('http://192.168.1.35:8080/clinicList',{})
+//          .then(response => {
+//              this.list = response.data;
+//              console.log(response.data);
+//          })
+//          .catch(error =>{
+//              this.errors.push(error);
+//              console.log(error);
+//          })
+//      },
  
      
- }
+//  }
  
  </script>
 
