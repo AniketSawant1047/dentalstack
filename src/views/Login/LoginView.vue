@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <html>
 
     <head>
@@ -38,8 +38,10 @@
                     <router-link class="router-link" to="HomePage"> Register</router-link>
 
                     <router-link class="router-link" to="PatientDetailsForm">Biba</router-link>
+
+                    <router-link class="router-link" to="Sign">Color</router-link>
                 </div>
-           
+                <buton class="butto">Button</buton>
         </div>
     </body>
 
@@ -201,4 +203,4 @@ label {
     text-decoration: none;
 
 }
-</style>
+</style> -->

@@ -126,6 +126,7 @@
     padding: 20px;
     border-radius: 15px;
     text-align: left;
+    background: rgba(17, 12, 24, 0.432);
 }
 .right{
     margin: 20px;
@@ -134,6 +135,7 @@
     border-radius: 15px;
     width: 100%;
     text-align: left;
+    background: rgba(17, 12, 24, 0.432);
 }
 .raw{
     display: flex;

@@ -128,7 +128,7 @@ body {
 
 .pDetails {
 	margin-top: 20px;
-
+	background: rgba(17, 12, 24, 0.432);
 	width: 100%;
 	padding: 5px;
 	border: 1px solid rgb(187, 187, 187);
@@ -207,8 +207,8 @@ span{display: none;}
 	color: rgb(17, 245, 17);
 }
 .step.completed {
-	border: 2px solid #141322;
-	background: #272541;
+	border: 2px solid #a7a7a7;
+	background: #11101d;;
 	color: white;
 	padding-top: 0px;
 

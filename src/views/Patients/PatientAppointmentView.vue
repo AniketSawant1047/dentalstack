@@ -151,13 +151,17 @@ export default {
     overflow: hidden;
     text-align: left;
 }
-
+#left{
+    background: rgba(17, 12, 24, 0.432);
+    border: 1px solid #c7c7c7;
+    border-radius: 25px;
+}
 #right{
     border: 1px solid #c7c7c7;
     border-radius: 25px;
-    margin: 10px;
-    padding: 30px;
-    
+    margin: 5px;
+    padding: 15px;
+    background: rgba(17, 12, 24, 0.432);
 }
 .form-group{
     display: flex;

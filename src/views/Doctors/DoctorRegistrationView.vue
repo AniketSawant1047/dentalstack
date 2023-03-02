@@ -41,8 +41,8 @@
             </tr>
             <tr>
                 <td class="firsttd"><lable class="lable" for="">Pin Code</lable></td>
-                <td><input v-model="doctorPincode" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "6"  placeholder="Enter Pincode"/></td>
-                <!-- <td><input type="number" v-model="pincode" required></td> -->
+                <!-- <td><input v-model="doctorPincode" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "6"  placeholder="Enter Pincode"/></td> -->
+                <td> <vue-tel-input class="" id="phone"> </vue-tel-input></td>
             </tr>
             <tr>
                 <td class="firsttd"><lable class="lable" for="">Specialization</lable></td>

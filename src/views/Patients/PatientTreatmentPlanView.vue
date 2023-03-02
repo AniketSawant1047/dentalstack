@@ -196,6 +196,7 @@ export default {
     width: 61%;
     text-align: left;
     border-radius: 15px;
+    background: rgba(17, 12, 24, 0.432);
 }
 
 .left {
@@ -204,6 +205,7 @@ export default {
     width: 38%;
     text-align: left;
     border-radius: 15px;
+    background: rgba(17, 12, 24, 0.432);
 }
 
 .table1 tr,

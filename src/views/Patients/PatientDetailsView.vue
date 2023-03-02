@@ -186,6 +186,7 @@ export default {
     display: flex;
     width: 100%;
     color: #fff;
+   
 }
 
 .input {
@@ -195,6 +196,7 @@ export default {
     padding-top: 50px;
     border: 1px #fff solid;
     border-radius: 20px;
+    background: rgba(17, 12, 24, 0.432);
 }
 .inputs {
     width: 600px;
@@ -203,6 +205,7 @@ export default {
     background: transparent;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
+    
 }
 
 .inputs option {
@@ -229,6 +232,7 @@ export default {
 
 .table{
     border-radius: 15px;
+    background: rgba(17, 12, 24, 0.432);
 }
 #button{
     position: relative;

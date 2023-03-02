@@ -9,8 +9,31 @@ const routes = [
   },
 
   {
-    path: '/signup',
-    name: 'signup',
+    path: '/color',
+    name: 'color',
+    component: () => import('../components/StyleConfig.vue')
+  },
+  {
+    path: '/SignUp',
+    name: 'SignUp',
+    component: () => import('../views/Login/SignUpView.vue'),
+    children:[
+      {
+        path: '/DoctorSignUp',
+        name: 'DoctorSignUp',
+        component: () => import('../views/Login/DoctorSignUpView.vue')
+      },
+      {
+        path: '/AdminSignUp',
+        name: 'AdminSignUp',
+        component: () => import('../views/Login/AdminSignUpView.vue')
+      },
+    ]
+  },
+  
+  {
+    path: '/signups',
+    name: 'signups',
     component: () => import('../views/Login/SignupView.vue')
   },
   {

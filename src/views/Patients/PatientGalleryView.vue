@@ -10,7 +10,7 @@
     </div>
     <div class="uploadPhoto">
       <div class="form-group">
-        <label class="col-sm-4 control-label">Progress Image:</label>
+        <label class="col-sm-4">Progress Image:</label>
         <div class="col-sm-8">
           <select name="progress_image" class="form-control">
             <option value="Initial consultation ">Initial consultation</option>
@@ -35,8 +35,7 @@
       </div>
       <br />
       <div class="form-group">
-        <label class="col-sm-4 control-label">Remarks:</label>
-
+        <label class="col-sm-4">Remarks:</label>
         <div class="col-sm-8">
           <input name="progress_tag" class="form-control" />
         </div>
@@ -90,6 +89,7 @@ export default {
   display: flex;
   justify-content: space-evenly;
   box-sizing: border-box;
+  
 }
 .uploadPhoto {
   width: 55%;
@@ -97,6 +97,7 @@ export default {
   border-radius: 10px;
   padding: 30px;
   margin: 10px;
+  background: rgba(17, 12, 24, 0.432);
 }
 .viewPhoto{
   width: 40%;
@@ -104,9 +105,17 @@ export default {
   border-radius: 10px;
   padding: 30px;
   margin: 10px;
+  background: rgba(17, 12, 24, 0.432);
 }
 
+.form-group{
+  display: flex;
+  
+}
 
+label{
+    color: #fff;
+}
 #imageGet {
   width: 150px;
 }

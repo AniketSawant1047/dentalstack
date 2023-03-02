@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="main">
+        <div>
         <ul class="nav nav-tabs" id="nav">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" @click="createNewTreatment">New Treatment</a>
@@ -70,11 +71,12 @@
 
                     </tbody>
                     <button class="btn btn-success pull-right" id="button" @click="upload()">Save</button>
-                    <button @click="function1()">ADD</button>
+                 
                 </table>
             </div>
         </div>
 
+    </div>
     </div>
 </template>
 
@@ -218,6 +220,11 @@ export default {
 }
 </script>
 <style scoped>
+.main{
+    border-radius: 1px #818181 solid;
+    border-radius: 15px;
+    background: rgba(17, 12, 24, 0.432);;
+}
 .treatmentplan {
     margin: 40px;
     display: flex;
@@ -254,8 +261,7 @@ label {
 }
 
 #button {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    
     position: absolute;
     right: 2%;
     display: none;
